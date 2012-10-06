@@ -1,0 +1,28 @@
+<?php
+/**
+ * @file
+ * Provides days to hms_field functionality.
+ */
+
+
+/**
+ * Adds days with hours and minutes to format options.
+ */
+function hms_days_hms_format_alter(&$format) {
+  $format['d hh:mm'] = 'd hh:mm';
+  $format['d'] = 'd';
+}
+
+/**
+ * Informs the factor map as to the seconds in a day.
+ */
+function hms_days_hms_factor_alter(&$factor) {
+  $factor['d'] = 86400;
+}
+
+/**
+ * Provides the natural language label for day formats.
+ */
+function hms_days_hms_label_alter(&$labels) {
+  $labels['d'] = array('single' => 'day', 'multiple' => 'days');
+}

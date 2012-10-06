@@ -1,0 +1,7 @@
+name = HMS Field - Days AddOn
+description = "Provides a formats for days in the HMS module."
+package = Fields
+core = 7.x
+
+dependencies[] = field
+dependencies[] = hms_field
