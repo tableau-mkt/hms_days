@@ -5,9 +5,3 @@ core = 7.x
 
 dependencies[] = field
 dependencies[] = hms_field
-
-; Project Source: GitLab packaging details
-project status url = http://drupal-update-status-server.tsi.lan/drupal/release-history
-project = hms_days
-version = 7.x-1.0
-datestamp = 1375992957
